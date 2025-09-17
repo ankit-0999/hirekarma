@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@vercel/next" }],
+  "framework": "nextjs",
+  "outputDirectory": "out",
+  "env": {
+    "NEXT_PUBLIC_API_BASE_URL": "https://hirekarma-git-main-ankit-kumars-projects-f5814546.vercel.app/"
+  }
+}
+
