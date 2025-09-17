@@ -8,8 +8,9 @@ import EventCard from '@/components/EventCard';
 import EventDetailModal from '@/components/EventDetailModal';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Search, Calendar, Plus, Filter } from 'lucide-react';
+import { Search, Calendar, Plus } from 'lucide-react';
 import Link from 'next/link';
+import { Event } from '@/contexts/EventContext';
 
 export default function EventsPage() {
   const { user, isLoading: authLoading } = useAuth();
