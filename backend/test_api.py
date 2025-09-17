@@ -24,17 +24,17 @@ def test_signup():
         print(f"Response: {response.text}")
         
         if response.status_code == 200:
-            print("✅ Signup successful!")
+            print("Signup successful!")
             return response.json()
         else:
-            print("❌ Signup failed!")
+            print("Signup failed!")
             return None
             
     except requests.exceptions.ConnectionError:
-        print("❌ Cannot connect to backend. Make sure it's running on http://localhost:8000")
+        print("Cannot connect to backend. Make sure it's running on http://localhost:8000")
         return None
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         return None
 
 def test_login():
@@ -52,14 +52,14 @@ def test_login():
         print(f"Response: {response.text}")
         
         if response.status_code == 200:
-            print("✅ Login successful!")
+            print("Login successful!")
             return response.json()
         else:
-            print("❌ Login failed!")
+            print("Login failed!")
             return None
             
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         return None
 
 def test_events():
@@ -72,18 +72,18 @@ def test_events():
         print(f"Response: {response.text}")
         
         if response.status_code == 200:
-            print("✅ Events endpoint working!")
+            print("Events endpoint working!")
             return response.json()
         else:
-            print("❌ Events endpoint failed!")
+            print("Events endpoint failed!")
             return None
             
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
         return None
 
 if __name__ == "__main__":
-    print("🧪 Testing HireKarma API...")
+    print("Testing HireKarma API...")
     print("=" * 50)
     
     # Test signup

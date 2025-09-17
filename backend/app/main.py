@@ -35,7 +35,10 @@ def get_db():
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello World"}
+    return {
+        "message": "Hello Ankit",
+        "Status":"Success"
+        }
 
 
 @app.post("/register", response_model=schemas.UserOut)

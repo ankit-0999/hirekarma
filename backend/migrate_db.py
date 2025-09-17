@@ -8,13 +8,13 @@ from app.models import Base
 
 def migrate_database():
     """Drop and recreate all tables with the current schema"""
-    print("🗑️  Dropping existing tables...")
+    print("Dropping existing tables...")
     Base.metadata.drop_all(bind=engine)
-    
-    print("🏗️  Creating tables with new schema...")
+
+    print("Creating tables with new schema...")
     Base.metadata.create_all(bind=engine)
-    
-    print("✅ Database migration completed successfully!")
+
+    print("Database migration completed successfully!")
 
 if __name__ == "__main__":
     migrate_database()
